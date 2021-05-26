@@ -29,11 +29,11 @@ class QuizBrain:
         current_question = self.question_list[self.question_number]
         self.question_number += 1
         # we save the response on user_answer
-        user_answer = input(f"Q.{self.question_number}  {current_question.text}. (True/False)")
+        user_answer = input(f"Q.{self.question_number}  {current_question.question}. (True/False)")
         # we created the method check_answer and we will pass the values user_answer to have what the user has answered
         # and the current_question.answer, we take from the dictionary the answer key to have both and compare in the
         # method if it is correct or not.
-        self.check_answer(user_answer, current_question.answer)
+        self.check_answer(user_answer, current_question.correct_answer)
 
     def check_answer(self, user_answer, correct_answer):
         if user_answer.lower() == correct_answer.lower():

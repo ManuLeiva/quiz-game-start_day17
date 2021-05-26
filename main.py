@@ -8,8 +8,8 @@ question_bank = []
 # Iterating through question_data
 for question in question_data:
     # We create 2 variables, one for the text key, 2nd one for the answer key.
-    question_text = question["text"]
-    question_answer = question["answer"]
+    question_text = question["question"]
+    question_answer = question["correct_answer"]
     # We create the question-objects
     new_question = Question(question_text, question_answer)
     # We append it in the question_bank list.
