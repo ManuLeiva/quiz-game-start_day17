@@ -3,4 +3,3 @@ class Question:
         # Attributes creation
         self.text = q_text
         self.answer = q_answer
-        
